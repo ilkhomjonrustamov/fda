@@ -1,0 +1,72 @@
+.card_box {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  position: relative;
+  cursor: pointer;
+}
+.card {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  position: relative;
+  cursor: pointer;
+}
+
+.card_image {
+  position: relative;
+  height: 250px;
+  cursor: pointer;
+}
+
+.card:hover .card_hover_img {
+  display: flex;
+}
+
+.card_hover_img {
+  display: none;
+}
+
+.card_hover_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.card_box:nth-child(1),
+.card_box:nth-child(8) {
+  grid-column: span 3;
+}
+
+.card_box:nth-child(2),
+.card_box:nth-child(3),
+.card_box:nth-child(4),
+.card_box:nth-child(5),
+.card_box:nth-child(6),
+.card_box:nth-child(7) {
+  grid-column: span 2;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* Qoganini ham shunga togrlab ketaverasiz */
+
+@media (max-width: 1200px) {
+  .card_image {
+    height: 180px;
+  }
+  .card_box:nth-child(1),
+  .card_box:nth-child(8) {
+    grid-column: auto;
+  }
+
+  .card_box:nth-child(2),
+  .card_box:nth-child(3),
+  .card_box:nth-child(4),
+  .card_box:nth-child(5),
+  .card_box:nth-child(6),
+  .card_box:nth-child(7) {
+    grid-column: auto;
+  }
+}

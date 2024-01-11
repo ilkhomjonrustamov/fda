@@ -1,0 +1,44 @@
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.btn {
+  display: grid;
+  place-items: center;
+  color: var(--black);
+  transition: 0.3s;
+}
+
+.btn:hover,
+.arrowbtn:hover {
+  color: var(--green);
+}
+
+.btn svg,
+.arrowbtn svg {
+  width: 40px;
+  height: 40px;
+}
+
+.arrowbtn {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid #ebebeb;
+  border-radius: 50%;
+  color: var(--black);
+  transition: 0.3s;
+}
+@media (max-width: 1440px) {
+  .buttons {
+    gap: 16px;
+  }
+}
+@media (max-width: 1200px) {
+  .buttons {
+    display: none;
+  }
+}
